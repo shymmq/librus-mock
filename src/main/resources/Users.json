@@ -1,4 +1,3 @@
-
 {
 "Users": [
 {
@@ -6,9 +5,9 @@
 "IsSchoolAdministrator": true
 },
   {
-"Id": 12345,
-"FirstName": "Tomasz",
-"LastName": "Problem"
+    "Id": 1235065,
+    "FirstName": "Pan",
+    "LastName": "Nauczyciel"
 }],
 "Resources": {
 "Users\\IndividualEducationPeriods": {

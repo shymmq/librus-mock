@@ -4,7 +4,11 @@ import com.beust.klaxon.JsonObject
 import org.springframework.core.io.ClassPathResource
 import org.springframework.core.io.InputStreamResource
 import org.springframework.http.ResponseEntity
-import org.springframework.web.bind.annotation.*
+import org.springframework.web.bind.annotation.ModelAttribute
+import org.springframework.web.bind.annotation.RequestMapping
+import org.springframework.web.bind.annotation.RequestMethod
+import org.springframework.web.bind.annotation.RestController
+import javax.servlet.http.HttpServletRequest
 
 @Suppress("unused")
 @RestController
@@ -31,11 +35,12 @@ class MainController {
         }
     }
 
-    @RequestMapping(path = arrayOf("/2.0/{endpoint}"),
+    @RequestMapping(path = arrayOf("/2.0/**"),
             method = arrayOf(RequestMethod.GET),
             produces = arrayOf("application/json"))
-    fun request(@PathVariable("endpoint") endpoint: String): InputStreamResource {
-        val stream = ClassPathResource("$endpoint.json").inputStream
+    fun request(request: HttpServletRequest): InputStreamResource {
+        val path = request.requestURI + ".json"
+        val stream = ClassPathResource(path).inputStream
         return InputStreamResource(stream)
     }
 }

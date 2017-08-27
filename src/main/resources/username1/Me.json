@@ -1,14 +1,14 @@
 {
   "Me": {
     "Account": {
-      "Id": 12,
-      "UserId": 33,
+      "Id": 1,
+      "UserId": 1,
       "FirstName": "Tomasz",
-      "LastName": "Problem",
+      "LastName": "Problem1",
       "Email": "tompro@gmail.com",
       "GroupId": 8,
       "IsActive": false,
-      "Login": "12u",
+      "Login": "1u",
       "AppRuleUrl": "https://synergia.librus.pl/regulamin_aplikacji_mobilnej/f4dbdf21",
       "IsNewAppRulesAccepted": true,
       "IsPremium": true,
@@ -17,7 +17,7 @@
     "Refresh": 900,
     "User": {
       "FirstName": "Tomasz",
-      "LastName": "Problem"
+      "LastName": "Problem1"
     },
     "Class": {
       "Id": 99,

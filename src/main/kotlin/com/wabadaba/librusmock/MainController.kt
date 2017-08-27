@@ -4,10 +4,7 @@ import com.beust.klaxon.JsonObject
 import org.springframework.core.io.ClassPathResource
 import org.springframework.core.io.InputStreamResource
 import org.springframework.http.ResponseEntity
-import org.springframework.web.bind.annotation.ModelAttribute
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RequestMethod
-import org.springframework.web.bind.annotation.RestController
+import org.springframework.web.bind.annotation.*
 import javax.servlet.http.HttpServletRequest
 
 @Suppress("unused")
@@ -38,8 +35,11 @@ class MainController {
     @RequestMapping(path = arrayOf("/2.0/**"),
             method = arrayOf(RequestMethod.GET),
             produces = arrayOf("application/json"))
-    fun request(request: HttpServletRequest): InputStreamResource {
-        val path = request.requestURI + ".json"
+    fun request(request: HttpServletRequest,
+                @RequestHeader(value = "Authorization") authHeader: String): InputStreamResource {
+        assert(authHeader.startsWith("Bearer "))
+        val token = authHeader.drop(7)
+        val path = "/$token${request.requestURI.drop(4)}.json"
         val stream = ClassPathResource(path).inputStream
         return InputStreamResource(stream)
     }

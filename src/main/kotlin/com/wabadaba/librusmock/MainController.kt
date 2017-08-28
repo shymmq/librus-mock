@@ -39,9 +39,15 @@ class MainController {
                 @RequestHeader(value = "Authorization") authHeader: String): InputStreamResource {
         assert(authHeader.startsWith("Bearer "))
         val token = authHeader.drop(7)
-        val path = "/$token${request.requestURI.drop(4)}.json"
-        val stream = ClassPathResource(path).inputStream
-        return InputStreamResource(stream)
+        try {
+            val path = "/$token${request.requestURI.drop(4)}.json"
+            val stream = ClassPathResource(path).inputStream
+            return InputStreamResource(stream)
+        } catch (e: Exception) {
+            val path = "/main${request.requestURI.drop(4)}.json"
+            val stream = ClassPathResource(path).inputStream
+            return InputStreamResource(stream)
+        }
     }
 }
 

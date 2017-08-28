@@ -81,7 +81,7 @@
             "Url": "https://api.librus.pl/2.0/Users/1235090"
           },
           "IsSubstitutionClass": false,
-          "IsCanceled": false,
+          "IsCanceled": true,
           "SubstitutionNote": null,
           "HourFrom": "08:55",
           "HourTo": "09:40",

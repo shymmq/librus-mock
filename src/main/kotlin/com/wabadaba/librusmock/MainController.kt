@@ -15,7 +15,7 @@ import com.google.android.gcm.server.Sender
 @RestController
 class MainController {
 
-    private val apiKey = "AAAArZ8ifto:APA91bGNWWnmyLBQM88JNMF6qyG021YKavQAMa26ZzsKBCU0LHL2Oxeo4UScXijH_LtW6Jcia71kzZmZYM0qxlG_YGjA0xafIbMD5Lk2BDe7l_NnzKEw6BiezTJ-4XKUWAIcGw5gQsXh"
+    private val apiKey = "AIzaSyAmdPaNNNmY1f9N6VKy436etqibtQURJzY"
 
     private var lastRegId: String? = null
 
@@ -43,6 +43,7 @@ class MainController {
     @RequestMapping(path = arrayOf("/2.0/PushDevices"), method = arrayOf(RequestMethod.POST))
     fun pushDevice(@RequestBody registrationId: RegistrationID): ResponseEntity<String> {
         lastRegId = registrationId.provider
+        println("Saved reg id : $lastRegId")
         return ResponseEntity.ok("kthxbye")
     }
 
@@ -52,7 +53,8 @@ class MainController {
         val message = Message.Builder()
                 .addData("message", "this is the message")
                 .build()
-        val result = sender.send(message, lastRegId, 1)
+        println("Sending message to reg id : $lastRegId")
+        sender.send(message, lastRegId, 1)
     }
 
     @RequestMapping(path = arrayOf("/2.0/**"),

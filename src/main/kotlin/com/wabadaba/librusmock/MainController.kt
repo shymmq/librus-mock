@@ -42,7 +42,7 @@ class MainController {
 
     @RequestMapping(path = arrayOf("/2.0/PushDevices"), method = arrayOf(RequestMethod.POST))
     fun pushDevice(@RequestBody registrationId: RegistrationID): ResponseEntity<String> {
-        lastRegId = registrationId.provider
+        lastRegId = registrationId.device
         println("Saved reg id : $lastRegId")
         return ResponseEntity.ok("kthxbye")
     }

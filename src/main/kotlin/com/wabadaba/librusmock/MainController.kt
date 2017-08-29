@@ -51,7 +51,11 @@ class MainController {
     fun sendNotification() {
         val sender = Sender(apiKey)
         val message = Message.Builder()
-                .addData("message", "this is the message")
+                .addData("message", "(test)Ogłoszenia. Usunięto ogłoszenie")
+                .addData("objectType", "SchoolNotices")
+                .addData("title", "Synergia")
+                .addData("userId", "3u")
+                .addData("collapse_key", "do_not_collapsee")
                 .build()
         println("Sending message to reg id : $lastRegId")
         sender.send(message, lastRegId, 1)

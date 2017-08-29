@@ -1,15 +1,23 @@
 package com.wabadaba.librusmock
 
 import com.beust.klaxon.JsonObject
+import com.google.android.gcm.server.Message
 import org.springframework.core.io.ClassPathResource
 import org.springframework.core.io.InputStreamResource
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 import javax.servlet.http.HttpServletRequest
+import org.apache.tomcat.jni.Socket.send
+import com.google.android.gcm.server.Sender
+
 
 @Suppress("unused")
 @RestController
 class MainController {
+
+    private val apiKey = "AAAArZ8ifto:APA91bGNWWnmyLBQM88JNMF6qyG021YKavQAMa26ZzsKBCU0LHL2Oxeo4UScXijH_LtW6Jcia71kzZmZYM0qxlG_YGjA0xafIbMD5Lk2BDe7l_NnzKEw6BiezTJ-4XKUWAIcGw5gQsXh"
+
+    private var lastRegId: String? = null
 
     val users = setOf(LoginData("username1", "password1"),
             LoginData("username2", "password2"),
@@ -18,18 +26,33 @@ class MainController {
     @RequestMapping(path = arrayOf("/OAuth/Token"), method = arrayOf(RequestMethod.POST))
     fun login(@ModelAttribute loginData: LoginData): ResponseEntity<String> {
         println(loginData)
-        if (users.contains(loginData)) {
+        return if (users.contains(loginData)) {
             val response = JsonObject()
             response.put("access_token", loginData.username)
             response.put("refresh_token", loginData.username)
             response.put("expires_in", 1864800)
-            return ResponseEntity.ok(response.toJsonString())
+            ResponseEntity.ok(response.toJsonString())
         } else {
             val response = JsonObject()
             response.put("error", "invalid_grant")
-            return ResponseEntity.badRequest()
+            ResponseEntity.badRequest()
                     .body(response.toJsonString())
         }
+    }
+
+    @RequestMapping(path = arrayOf("/2.0/PushDevices"), method = arrayOf(RequestMethod.POST))
+    fun pushDevice(@RequestBody registrationId: RegistrationID): ResponseEntity<String> {
+        lastRegId = registrationId.provider
+        return ResponseEntity.ok("kthxbye")
+    }
+
+    @RequestMapping(path = arrayOf("/sendNotification"))
+    fun sendNotification() {
+        val sender = Sender(apiKey)
+        val message = Message.Builder()
+                .addData("message", "this is the message")
+                .build()
+        val result = sender.send(message, lastRegId, 1)
     }
 
     @RequestMapping(path = arrayOf("/2.0/**"),
@@ -50,6 +73,10 @@ class MainController {
         }
     }
 }
+
+data class RegistrationID(
+        var provider: String = "",
+        var device: String = "")
 
 data class LoginData(
         var username: String = "",

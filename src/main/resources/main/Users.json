@@ -1,24 +1,30 @@
 {
-"Users": [
-{
-"Id": 666,
-"IsSchoolAdministrator": true
-},
-  {
-    "Id": 1235065,
-    "FirstName": "Pan",
-    "LastName": "Nauczyciel"
-}],
-"Resources": {
-"Users\\IndividualEducationPeriods": {
-"Url": "https://api.librus.pl/2.0/Users/IndividualEducationPeriods"
-},
-"Users\\CrossedOutStudents": {
-"Url": "https://api.librus.pl/2.0/Users/CrossedOutStudents"
-},
-"..": {
-"Url": "https://api.librus.pl/2.0/Root"
-}
-},
-"Url": "https://api.librus.pl/2.0/Users"
+  "Users": [
+    {
+      "Id": 666,
+      "IsSchoolAdministrator": true
+    },
+    {
+      "Id": 1235065,
+      "FirstName": "Pan",
+      "LastName": "Nauczyciel"
+    },
+    {
+      "Id": 1235106,
+      "FirstName": "Nauczyciel",
+      "LastName": "#2"
+    }
+  ],
+  "Resources": {
+    "Users\\IndividualEducationPeriods": {
+      "Url": "https://api.librus.pl/2.0/Users/IndividualEducationPeriods"
+    },
+    "Users\\CrossedOutStudents": {
+      "Url": "https://api.librus.pl/2.0/Users/CrossedOutStudents"
+    },
+    "..": {
+      "Url": "https://api.librus.pl/2.0/Root"
+    }
+  },
+  "Url": "https://api.librus.pl/2.0/Users"
 }

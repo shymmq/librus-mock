@@ -3,12 +3,12 @@
     {
       "Id": 1775479,
       "Content": "Srodki artystycznego wyrazu; wskaż- podkreśl, nazwij, określ funkcję",
-      "Date": "2016-09-15",
+      "Date": "2017-30-01",
       "Category": {
         "Id": 7323,
         "Url": "https://api.librus.pl/2.0/HomeWorks/Categories/7323"
       },
-      "LessonNo": "1",
+      "LessonNo": "3",
       "TimeFrom": null,
       "TimeTo": null,
       "CreatedBy": {

@@ -11,7 +11,7 @@
         "Url": "https://api.librus.pl/2.0/Subjects/44569"
       }
     },
-    {
+    {`
       "Id": 2729409,
       "Teacher": {
         "Id": 1235090,

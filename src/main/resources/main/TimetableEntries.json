@@ -1,0 +1,1146 @@
+{
+  "TimetableEntries": [
+    {
+      "Id": 163197,
+      "Lesson": {
+        "Id": 1502528,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502528"
+      },
+      "VirtualClass": {
+        "Id": 558366,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558366"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 1,
+      "LessonNo": 5,
+      "Classroom": {
+        "Id": 4524,
+        "Symbol": "A1",
+        "Name": "A1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163198,
+      "Lesson": {
+        "Id": 1502528,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502528"
+      },
+      "VirtualClass": {
+        "Id": 558366,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558366"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 4,
+      "LessonNo": 3,
+      "Classroom": {
+        "Id": 4524,
+        "Symbol": "A1",
+        "Name": "A1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163199,
+      "Lesson": {
+        "Id": 1502528,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502528"
+      },
+      "VirtualClass": {
+        "Id": 558366,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558366"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 1,
+      "LessonNo": 6,
+      "Classroom": {
+        "Id": 4524,
+        "Symbol": "A1",
+        "Name": "A1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163202,
+      "Lesson": {
+        "Id": 1502530,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502530"
+      },
+      "VirtualClass": {
+        "Id": 558368,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558368"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 1,
+      "LessonNo": 1,
+      "Classroom": {
+        "Id": 4540,
+        "Symbol": "C7",
+        "Name": "C7",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163203,
+      "Lesson": {
+        "Id": 1502530,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502530"
+      },
+      "VirtualClass": {
+        "Id": 558368,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558368"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 1,
+      "LessonNo": 2,
+      "Classroom": {
+        "Id": 4540,
+        "Symbol": "C7",
+        "Name": "C7",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163204,
+      "Lesson": {
+        "Id": 1502538,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502538"
+      },
+      "VirtualClass": {
+        "Id": 558369,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558369"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 2,
+      "LessonNo": 5,
+      "Classroom": {
+        "Id": 4549,
+        "Symbol": "WF1",
+        "Name": "WF1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163205,
+      "Lesson": {
+        "Id": 1502538,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502538"
+      },
+      "VirtualClass": {
+        "Id": 558369,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558369"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 3,
+      "LessonNo": 1,
+      "Classroom": {
+        "Id": 4551,
+        "Symbol": "WF3",
+        "Name": "WF3",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163206,
+      "Lesson": {
+        "Id": 1502538,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502538"
+      },
+      "VirtualClass": {
+        "Id": 558369,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558369"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 2,
+      "LessonNo": 4,
+      "Classroom": {
+        "Id": 4549,
+        "Symbol": "WF1",
+        "Name": "WF1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163315,
+      "Lesson": {
+        "Id": 1502593,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502593"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-10",
+      "DayOfTheWeek": 5,
+      "LessonNo": 2,
+      "Classroom": {
+        "Id": 4539,
+        "Symbol": "C6",
+        "Name": "C6",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163316,
+      "Lesson": {
+        "Id": 1502594,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502594"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 3,
+      "LessonNo": 2,
+      "Classroom": {
+        "Id": 4541,
+        "Symbol": "CH1",
+        "Name": "CH1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163317,
+      "Lesson": {
+        "Id": 1502595,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502595"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 2,
+      "LessonNo": 6,
+      "Classroom": {
+        "Id": 4525,
+        "Symbol": "A2",
+        "Name": "A2",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163318,
+      "Lesson": {
+        "Id": 1502596,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502596"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-10",
+      "DayOfTheWeek": 4,
+      "LessonNo": 4,
+      "Classroom": {
+        "Id": 4546,
+        "Symbol": "FIZ",
+        "Name": "FIZ",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163319,
+      "Lesson": {
+        "Id": 1502598,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502598"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 4,
+      "LessonNo": 7,
+      "Classroom": {
+        "Id": 4535,
+        "Symbol": "C2",
+        "Name": "C2",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163320,
+      "Lesson": {
+        "Id": 1502599,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502599"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 2,
+      "LessonNo": 1,
+      "Classroom": {
+        "Id": 4534,
+        "Symbol": "C1",
+        "Name": "C1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163321,
+      "Lesson": {
+        "Id": 1502599,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502599"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-10",
+      "DayOfTheWeek": 5,
+      "LessonNo": 1,
+      "Classroom": {
+        "Id": 4534,
+        "Symbol": "C1",
+        "Name": "C1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163322,
+      "Lesson": {
+        "Id": 1502524,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502524"
+      },
+      "VirtualClass": {
+        "Id": 558396,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558396"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 2,
+      "LessonNo": 7,
+      "Classroom": {
+        "Id": 1512,
+        "Symbol": "E2",
+        "Name": "E2",
+        "Size": 20
+      }
+    },
+    {
+      "Id": 163324,
+      "Lesson": {
+        "Id": 1502602,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502602"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 3,
+      "LessonNo": 5,
+      "Classroom": {
+        "Id": 4543,
+        "Symbol": "D1",
+        "Name": "D1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163325,
+      "Lesson": {
+        "Id": 1502602,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502602"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 5,
+      "LessonNo": 3,
+      "Classroom": {
+        "Id": 4543,
+        "Symbol": "D1",
+        "Name": "D1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163326,
+      "Lesson": {
+        "Id": 1502602,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502602"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 4,
+      "LessonNo": 5,
+      "Classroom": {
+        "Id": 4543,
+        "Symbol": "D1",
+        "Name": "D1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163327,
+      "Lesson": {
+        "Id": 1502602,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502602"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 5,
+      "LessonNo": 4,
+      "Classroom": {
+        "Id": 4543,
+        "Symbol": "D1",
+        "Name": "D1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163328,
+      "Lesson": {
+        "Id": 1502604,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502604"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 1,
+      "LessonNo": 4,
+      "Classroom": {
+        "Id": 4526,
+        "Symbol": "A3",
+        "Name": "A3",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163329,
+      "Lesson": {
+        "Id": 1502604,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502604"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 2,
+      "LessonNo": 3,
+      "Classroom": {
+        "Id": 4526,
+        "Symbol": "A3",
+        "Name": "A3",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163330,
+      "Lesson": {
+        "Id": 1502604,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502604"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 2,
+      "LessonNo": 2,
+      "Classroom": {
+        "Id": 4526,
+        "Symbol": "A3",
+        "Name": "A3",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163331,
+      "Lesson": {
+        "Id": 1502604,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502604"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 3,
+      "LessonNo": 4,
+      "Classroom": {
+        "Id": 4526,
+        "Symbol": "A3",
+        "Name": "A3",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163332,
+      "Lesson": {
+        "Id": 1502604,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502604"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 3,
+      "LessonNo": 3,
+      "Classroom": {
+        "Id": 4526,
+        "Symbol": "A3",
+        "Name": "A3",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163333,
+      "Lesson": {
+        "Id": 1502605,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502605"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 4,
+      "LessonNo": 6,
+      "Classroom": {
+        "Id": 4525,
+        "Symbol": "A2",
+        "Name": "A2",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163334,
+      "Lesson": {
+        "Id": 1502606,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502606"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 4,
+      "LessonNo": 2,
+      "Classroom": {
+        "Id": 4524,
+        "Symbol": "A1",
+        "Name": "A1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163338,
+      "Lesson": {
+        "Id": 1502609,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502609"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 3,
+      "LessonNo": 6,
+      "Classroom": {
+        "Id": 4543,
+        "Symbol": "D1",
+        "Name": "D1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163823,
+      "Lesson": {
+        "Id": 1502812,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502812"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 3,
+      "LessonNo": 7,
+      "Classroom": {
+        "Id": 4535,
+        "Symbol": "C2",
+        "Name": "C2",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 163824,
+      "Lesson": {
+        "Id": 1502812,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502812"
+      },
+      "DateFrom": "2017-09-05",
+      "DateTo": "2017-09-10",
+      "DayOfTheWeek": 1,
+      "LessonNo": 3,
+      "Classroom": {
+        "Id": 4548,
+        "Symbol": "KON",
+        "Name": "KON",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 578100,
+      "Lesson": {
+        "Id": 1502599,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502599"
+      },
+      "DateFrom": "2017-09-11",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 5,
+      "LessonNo": 2
+    },
+    {
+      "Id": 578101,
+      "Lesson": {
+        "Id": 1502596,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502596"
+      },
+      "DateFrom": "2017-09-11",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 1,
+      "LessonNo": 3
+    },
+    {
+      "Id": 578102,
+      "Lesson": {
+        "Id": 1502593,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502593"
+      },
+      "DateFrom": "2017-09-11",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 4,
+      "LessonNo": 4
+    },
+    {
+      "Id": 578103,
+      "Lesson": {
+        "Id": 1502812,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502812"
+      },
+      "DateFrom": "2017-09-11",
+      "DateTo": "2017-09-24",
+      "DayOfTheWeek": 4,
+      "LessonNo": 8
+    },
+    {
+      "Id": 703645,
+      "Lesson": {
+        "Id": 1502528,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502528"
+      },
+      "VirtualClass": {
+        "Id": 558366,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558366"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 1,
+      "LessonNo": 5,
+      "Classroom": {
+        "Id": 4524,
+        "Symbol": "A1",
+        "Name": "A1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703646,
+      "Lesson": {
+        "Id": 1502528,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502528"
+      },
+      "VirtualClass": {
+        "Id": 558366,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558366"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 4,
+      "LessonNo": 3,
+      "Classroom": {
+        "Id": 4524,
+        "Symbol": "A1",
+        "Name": "A1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703647,
+      "Lesson": {
+        "Id": 1502528,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502528"
+      },
+      "VirtualClass": {
+        "Id": 558366,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558366"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 1,
+      "LessonNo": 6,
+      "Classroom": {
+        "Id": 4524,
+        "Symbol": "A1",
+        "Name": "A1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703650,
+      "Lesson": {
+        "Id": 1502530,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502530"
+      },
+      "VirtualClass": {
+        "Id": 558368,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558368"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 1,
+      "LessonNo": 1,
+      "Classroom": {
+        "Id": 4540,
+        "Symbol": "C7",
+        "Name": "C7",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703651,
+      "Lesson": {
+        "Id": 1502530,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502530"
+      },
+      "VirtualClass": {
+        "Id": 558368,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558368"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 1,
+      "LessonNo": 2,
+      "Classroom": {
+        "Id": 4540,
+        "Symbol": "C7",
+        "Name": "C7",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703652,
+      "Lesson": {
+        "Id": 1502538,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502538"
+      },
+      "VirtualClass": {
+        "Id": 558369,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558369"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 4,
+      "LessonNo": 5,
+      "Classroom": {
+        "Id": 4552,
+        "Symbol": "WF4",
+        "Name": "WF3a",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703653,
+      "Lesson": {
+        "Id": 1502538,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502538"
+      },
+      "VirtualClass": {
+        "Id": 558369,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558369"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 4,
+      "LessonNo": 6,
+      "Classroom": {
+        "Id": 4552,
+        "Symbol": "WF4",
+        "Name": "WF3a",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703654,
+      "Lesson": {
+        "Id": 1502538,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502538"
+      },
+      "VirtualClass": {
+        "Id": 558369,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558369"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 2,
+      "LessonNo": 4,
+      "Classroom": {
+        "Id": 4549,
+        "Symbol": "WF1",
+        "Name": "WF1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703757,
+      "Lesson": {
+        "Id": 1502593,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502593"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 4,
+      "LessonNo": 4,
+      "Classroom": {
+        "Id": 4539,
+        "Symbol": "C6",
+        "Name": "C6",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703758,
+      "Lesson": {
+        "Id": 1502594,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502594"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 3,
+      "LessonNo": 2,
+      "Classroom": {
+        "Id": 4541,
+        "Symbol": "CH1",
+        "Name": "CH1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703759,
+      "Lesson": {
+        "Id": 1502595,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502595"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 2,
+      "LessonNo": 6,
+      "Classroom": {
+        "Id": 4525,
+        "Symbol": "A2",
+        "Name": "A2",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703760,
+      "Lesson": {
+        "Id": 1502596,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502596"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 5,
+      "LessonNo": 1,
+      "Classroom": {
+        "Id": 4546,
+        "Symbol": "FIZ",
+        "Name": "FIZ",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703761,
+      "Lesson": {
+        "Id": 1502598,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502598"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 4,
+      "LessonNo": 7,
+      "Classroom": {
+        "Id": 4535,
+        "Symbol": "C2",
+        "Name": "C2",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703762,
+      "Lesson": {
+        "Id": 1502599,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502599"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 2,
+      "LessonNo": 1,
+      "Classroom": {
+        "Id": 4534,
+        "Symbol": "C1",
+        "Name": "C1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703763,
+      "Lesson": {
+        "Id": 1502599,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502599"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 5,
+      "LessonNo": 2,
+      "Classroom": {
+        "Id": 4534,
+        "Symbol": "C1",
+        "Name": "C1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703764,
+      "Lesson": {
+        "Id": 1502524,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502524"
+      },
+      "VirtualClass": {
+        "Id": 558396,
+        "Url": "https://api.librus.pl/2.0/VirtualClasses/558396"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 2,
+      "LessonNo": 7,
+      "Classroom": {
+        "Id": 1512,
+        "Symbol": "E2",
+        "Name": "E2",
+        "Size": 20
+      }
+    },
+    {
+      "Id": 703766,
+      "Lesson": {
+        "Id": 1502602,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502602"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 5,
+      "LessonNo": 4,
+      "Classroom": {
+        "Id": 4543,
+        "Symbol": "D1",
+        "Name": "D1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703767,
+      "Lesson": {
+        "Id": 1502602,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502602"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 5,
+      "LessonNo": 3,
+      "Classroom": {
+        "Id": 4543,
+        "Symbol": "D1",
+        "Name": "D1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703768,
+      "Lesson": {
+        "Id": 1502602,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502602"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 2,
+      "LessonNo": 5,
+      "Classroom": {
+        "Id": 4539,
+        "Symbol": "C6",
+        "Name": "C6",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703769,
+      "Lesson": {
+        "Id": 1502602,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502602"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 3,
+      "LessonNo": 4,
+      "Classroom": {
+        "Id": 4535,
+        "Symbol": "C2",
+        "Name": "C2",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703770,
+      "Lesson": {
+        "Id": 1502604,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502604"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 1,
+      "LessonNo": 4,
+      "Classroom": {
+        "Id": 4526,
+        "Symbol": "A3",
+        "Name": "A3",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703771,
+      "Lesson": {
+        "Id": 1502604,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502604"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 2,
+      "LessonNo": 3,
+      "Classroom": {
+        "Id": 4526,
+        "Symbol": "A3",
+        "Name": "A3",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703772,
+      "Lesson": {
+        "Id": 1502604,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502604"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 2,
+      "LessonNo": 2,
+      "Classroom": {
+        "Id": 4526,
+        "Symbol": "A3",
+        "Name": "A3",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703773,
+      "Lesson": {
+        "Id": 1502604,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502604"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 1,
+      "LessonNo": 3,
+      "Classroom": {
+        "Id": 4526,
+        "Symbol": "A3",
+        "Name": "A3",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703774,
+      "Lesson": {
+        "Id": 1502604,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502604"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 3,
+      "LessonNo": 3,
+      "Classroom": {
+        "Id": 4526,
+        "Symbol": "A3",
+        "Name": "A3",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703775,
+      "Lesson": {
+        "Id": 1502605,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502605"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 3,
+      "LessonNo": 5,
+      "Classroom": {
+        "Id": 4535,
+        "Symbol": "C2",
+        "Name": "C2",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 703776,
+      "Lesson": {
+        "Id": 1502606,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502606"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 4,
+      "LessonNo": 2,
+      "Classroom": {
+        "Id": 4524,
+        "Symbol": "A1",
+        "Name": "A1",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 704246,
+      "Lesson": {
+        "Id": 1502812,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502812"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 4,
+      "LessonNo": 8,
+      "Classroom": {
+        "Id": 4525,
+        "Symbol": "A2",
+        "Name": "A2",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 704247,
+      "Lesson": {
+        "Id": 1502812,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502812"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 3,
+      "LessonNo": 7,
+      "Classroom": {
+        "Id": 4535,
+        "Symbol": "C2",
+        "Name": "C2",
+        "Size": 0
+      }
+    },
+    {
+      "Id": 704334,
+      "Lesson": {
+        "Id": 1502609,
+        "Url": "https://api.librus.pl/2.0/Lessons/1502609"
+      },
+      "DateFrom": "2017-09-25",
+      "DateTo": "2018-06-22",
+      "DayOfTheWeek": 3,
+      "LessonNo": 6,
+      "Classroom": {
+        "Id": 4532,
+        "Symbol": "B4",
+        "Name": "B4",
+        "Size": 0
+      }
+    }
+  ],
+  "Resources": {
+    "..": {
+      "Url": "https://api.librus.pl/2.0/Root"
+    }
+  },
+  "Url": "https://api.librus.pl/2.0/TimetableEntries"
+}

@@ -2,13 +2,12 @@ package com.wabadaba.librusmock
 
 import com.beust.klaxon.JsonObject
 import com.google.android.gcm.server.Message
+import com.google.android.gcm.server.Sender
 import org.springframework.core.io.ClassPathResource
 import org.springframework.core.io.InputStreamResource
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 import javax.servlet.http.HttpServletRequest
-import org.apache.tomcat.jni.Socket.send
-import com.google.android.gcm.server.Sender
 
 
 @Suppress("unused")
@@ -19,12 +18,14 @@ class MainController {
 
     private var lastRegId: String? = null
 
+    private var tokenValid: Boolean = true
+
     val users = setOf(LoginData("username1", "password1"),
             LoginData("username2", "password2"),
             LoginData("13335", "librus11"))
 
     @RequestMapping(path = arrayOf("/OAuth/Token"), method = arrayOf(RequestMethod.POST))
-    fun login(@ModelAttribute loginData: LoginData): ResponseEntity<String> {
+    fun login(@ModelAttribute loginData: LoginData): ResponseEntity<*> {
         println(loginData)
         return if (users.contains(loginData)) {
             val response = JsonObject()
@@ -61,11 +62,21 @@ class MainController {
         sender.send(message, lastRegId, 1)
     }
 
+    @RequestMapping(path = arrayOf("/setTokenValid"))
+    fun setTokenValid(@RequestParam value: String) {
+        tokenValid = value.toBoolean()
+        println("tokenValid = $tokenValid")
+    }
+
     @RequestMapping(path = arrayOf("/2.0/**"),
             method = arrayOf(RequestMethod.GET),
             produces = arrayOf("application/json"))
     fun request(request: HttpServletRequest,
                 @RequestHeader(value = "Authorization") authHeader: String): InputStreamResource {
+        if (!tokenValid) {
+            println("Returning token expired message")
+            return InputStreamResource(ClassPathResource("/tokenExpired.json").inputStream)
+        }
         assert(authHeader.startsWith("Bearer "))
         val token = authHeader.drop(7)
         try {

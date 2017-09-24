@@ -30,9 +30,8 @@ class MainController {
         println(loginData)
         if (refresh_token != null) {
             tokenValid = true
-            return ResponseEntity.ok("Token refreshed successfully")
         }
-        return if (users.contains(loginData)) {
+        return if (users.contains(loginData) || refresh_token != null) {
             val response = JsonObject()
             response.put("access_token", loginData.username)
             response.put("refresh_token", loginData.username)

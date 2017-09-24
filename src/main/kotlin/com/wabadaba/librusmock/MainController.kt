@@ -77,10 +77,11 @@ class MainController {
             method = arrayOf(RequestMethod.GET),
             produces = arrayOf("application/json"))
     fun request(request: HttpServletRequest,
-                @RequestHeader(value = "Authorization") authHeader: String): InputStreamResource {
+                @RequestHeader(value = "Authorization") authHeader: String): ResponseEntity<InputStreamResource> {
         if (!tokenValid) {
             println("Returning token expired message")
-            return InputStreamResource(ClassPathResource("/tokenExpired.json").inputStream)
+            return ResponseEntity.badRequest()
+                    .body(InputStreamResource(ClassPathResource("/tokenExpired.json").inputStream))
         }
         assert(authHeader.startsWith("Bearer "))
         val token = authHeader.drop(7)
@@ -88,12 +89,12 @@ class MainController {
             val path = "/$token${request.requestURI.drop(4)}.json"
             println("Trying to load file from path: $path")
             val stream = ClassPathResource(path).inputStream
-            return InputStreamResource(stream)
+            return ResponseEntity.ok(InputStreamResource(stream))
         } catch (e: Exception) {
             println("Fallback to /main")
             val path = "/main${request.requestURI.drop(4)}.json"
             val stream = ClassPathResource(path).inputStream
-            return InputStreamResource(stream)
+            return ResponseEntity.ok(InputStreamResource(stream))
         }
     }
 }

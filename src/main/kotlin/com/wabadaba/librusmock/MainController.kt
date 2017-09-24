@@ -25,8 +25,13 @@ class MainController {
             LoginData("13335", "librus11"))
 
     @RequestMapping(path = arrayOf("/OAuth/Token"), method = arrayOf(RequestMethod.POST))
-    fun login(@ModelAttribute loginData: LoginData): ResponseEntity<*> {
+    fun login(@RequestHeader refresh_token: String?,
+              @ModelAttribute loginData: LoginData): ResponseEntity<*> {
         println(loginData)
+        if (refresh_token != null) {
+            tokenValid = true
+            return ResponseEntity.ok("Token refreshed successfully")
+        }
         return if (users.contains(loginData)) {
             val response = JsonObject()
             response.put("access_token", loginData.username)
@@ -62,10 +67,10 @@ class MainController {
         sender.send(message, lastRegId, 1)
     }
 
-    @RequestMapping(path = arrayOf("/setTokenValid"))
-    fun setTokenValid(@RequestParam value: String) {
-        tokenValid = value.toBoolean()
-        println("tokenValid = $tokenValid")
+    @RequestMapping(path = arrayOf("/expireToken"))
+    fun setTokenValid() {
+        tokenValid = false
+        println("token expired")
     }
 
     @RequestMapping(path = arrayOf("/2.0/**"),
@@ -81,9 +86,11 @@ class MainController {
         val token = authHeader.drop(7)
         try {
             val path = "/$token${request.requestURI.drop(4)}.json"
+            println("Trying to load file from path: $path")
             val stream = ClassPathResource(path).inputStream
             return InputStreamResource(stream)
         } catch (e: Exception) {
+            println("Fallback to /main")
             val path = "/main${request.requestURI.drop(4)}.json"
             val stream = ClassPathResource(path).inputStream
             return InputStreamResource(stream)

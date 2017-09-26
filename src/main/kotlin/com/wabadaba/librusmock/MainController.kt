@@ -25,7 +25,7 @@ class MainController {
             LoginData("13335", "librus11"))
 
     @RequestMapping(path = arrayOf("/OAuth/Token"), method = arrayOf(RequestMethod.POST))
-    fun login(@RequestHeader refresh_token: String?,
+    fun login(@RequestHeader(required = false) refresh_token: String?,
               @ModelAttribute loginData: LoginData): ResponseEntity<*> {
         println(loginData)
         if (refresh_token != null) {

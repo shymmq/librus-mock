@@ -25,22 +25,25 @@ class MainController {
             LoginData("13335", "librus11"))
 
     @RequestMapping(path = arrayOf("/OAuth/Token"), method = arrayOf(RequestMethod.POST))
-    fun login(@RequestHeader(required = false) refresh_token: String?,
-              @ModelAttribute loginData: LoginData): ResponseEntity<*> {
+    fun login(@ModelAttribute loginData: LoginData): ResponseEntity<*> {
         println(loginData)
-        if (refresh_token != null) {
+        if (loginData.refresh_token != null) {
             tokenValid = true
-        }
-        return if (users.contains(loginData) || refresh_token != null) {
+            val response = JsonObject()
+            response.put("access_token", loginData.refresh_token)
+            response.put("refresh_token", loginData.refresh_token)
+            response.put("expires_in", 1864800)
+            return ResponseEntity.ok(response.toJsonString())
+        } else if (users.contains(loginData)) {
             val response = JsonObject()
             response.put("access_token", loginData.username)
             response.put("refresh_token", loginData.username)
             response.put("expires_in", 1864800)
-            ResponseEntity.ok(response.toJsonString())
+            return ResponseEntity.ok(response.toJsonString())
         } else {
             val response = JsonObject()
             response.put("error", "invalid_grant")
-            ResponseEntity.badRequest()
+            return ResponseEntity.badRequest()
                     .body(response.toJsonString())
         }
     }
@@ -104,4 +107,5 @@ data class RegistrationID(
 
 data class LoginData(
         var username: String = "",
-        var password: String = "")
+        var password: String = "",
+        var refresh_token: String? = null)

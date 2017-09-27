@@ -20,6 +20,8 @@ class MainController {
 
     private var tokenValid: Boolean = true
 
+    private var luckyNumber: JsonObject? = null
+
     val users = setOf(LoginData("username1", "password1"),
             LoginData("username2", "password2"),
             LoginData("13335", "librus11"))
@@ -28,6 +30,7 @@ class MainController {
     fun login(@ModelAttribute loginData: LoginData): ResponseEntity<*> {
         println(loginData)
         if (loginData.refresh_token != null) {
+            //Token refresh
             tokenValid = true
             val response = JsonObject()
             response.put("access_token", loginData.refresh_token)
@@ -35,12 +38,14 @@ class MainController {
             response.put("expires_in", 1864800)
             return ResponseEntity.ok(response.toJsonString())
         } else if (users.contains(loginData)) {
+            //Login
             val response = JsonObject()
             response.put("access_token", loginData.username)
             response.put("refresh_token", loginData.username)
             response.put("expires_in", 1864800)
             return ResponseEntity.ok(response.toJsonString())
         } else {
+            //Invalid
             val response = JsonObject()
             response.put("error", "invalid_grant")
             return ResponseEntity.badRequest()
@@ -75,17 +80,33 @@ class MainController {
         println("token expired")
     }
 
+    @RequestMapping(path = arrayOf("/setLuckyNumber"))
+    fun setLuckyNumber(@RequestParam date: String, @RequestParam number: Int) {
+        val wrapper = JsonObject()
+        wrapper.put("LuckyNumberDay", date)
+        wrapper.put("LuckyNumber", number)
+        luckyNumber = JsonObject()
+        luckyNumber!!.put("LuckyNumber", wrapper)
+        luckyNumber!!.put("Resources", "")
+        luckyNumber!!.put("Url", "")
+    }
+
     @RequestMapping(path = arrayOf("/2.0/**"),
             method = arrayOf(RequestMethod.GET),
             produces = arrayOf("application/json"))
     fun request(request: HttpServletRequest,
-                @RequestHeader(value = "Authorization") authHeader: String): ResponseEntity<InputStreamResource> {
+                @RequestHeader(value = "Authorization") authHeader: String): ResponseEntity<*> {
         if (!tokenValid) {
             println("Returning token expired message")
             return ResponseEntity.badRequest()
                     .body(InputStreamResource(ClassPathResource("/tokenExpired.json").inputStream))
         }
         assert(authHeader.startsWith("Bearer "))
+
+        if (luckyNumber != null) {
+            return ResponseEntity.ok(luckyNumber!!.toJsonString())
+        }
+
         val token = authHeader.drop(7)
         try {
             val path = "/$token${request.requestURI.drop(4)}.json"

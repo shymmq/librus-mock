@@ -103,7 +103,7 @@ class MainController {
         }
         assert(authHeader.startsWith("Bearer "))
 
-        if (luckyNumber != null) {
+        if (luckyNumber != null && request.requestURI.contains("LuckyNumbers")) {
             return ResponseEntity.ok(luckyNumber!!.toJsonString())
         }
 
